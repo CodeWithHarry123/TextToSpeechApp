@@ -6,47 +6,128 @@
   <title>Aurelio Text To Speech</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #1c1c2b, #2a2f45);
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #00e0ff;
+    }
+
+    p.description {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .download-btn {
+      background: #00e0ff;
+      color: #000;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .download-btn:hover {
+      background: #00bcd4;
+    }
+
+    .features {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1rem;
+      border-radius: 15px;
+    }
+
+    .feature h3 {
+      color: #00e0ff;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media(min-width: 768px) {
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="hero">
-    <nav>
-      <div class="logo">Aurelio<span>TTS</span></div>
-      <a href="https://drive.google.com/uc?export=download&id=1_7xx8e_XxEH9zh268CM8ZcNYhLEVIbL3" class="nav-download" target="_blank">Download</a>
-    </nav>
+  <div class="container">
+    <h1>🎙️ Aurelio Text To Speech App</h1>
+    <p class="description">
+      Convert your text into natural, clear voice — offline and fast.<br />
+      A lightweight and secure app designed for all your TTS needs.
+    </p>
 
-    <header class="hero-content">
-      <h1>🎙️ Turn Text Into Voice Instantly</h1>
-      <p>Experience natural-sounding speech with Aurelio — the offline TTS app everyone is downloading.</p>
-      <a href="https://drive.google.com/uc?export=download&id=1_7xx8e_XxEH9zh268CM8ZcNYhLEVIbL3" class="cta-button" target="_blank">📥 Get the APK</a>
-    </header>
-  </div>
+    <a class="download-btn"
+       href="https://drive.google.com/uc?export=download&id=1_7xx8e_XxEH9zh268CM8ZcNYhLEVIbL3"
+       target="_blank">
+      📥 Download Aurelio_Text_To_Speech_App
+    </a>
 
-  <main class="features-section">
-    <h2>✨ Features You'll Love</h2>
-    <div class="features-grid">
-      <div class="feature-box">
-        <h3>🗣️ Natural Voice Output</h3>
-        <p>Clear and fluent voices with pitch & speed adjustments.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>🗣️ Natural Voice</h3>
+        <p>Produces realistic speech with adjustable speed and tone.</p>
       </div>
-      <div class="feature-box">
-        <h3>⚡ Fast & Lightweight</h3>
-        <p>Low storage, instant performance, no internet needed.</p>
+      <div class="feature">
+        <h3>📱 Lightweight App</h3>
+        <p>Designed to be fast and responsive on all Android devices.</p>
       </div>
-      <div class="feature-box">
-        <h3>🔒 100% Private</h3>
-        <p>No ads. No spying. Fully offline.</p>
+      <div class="feature">
+        <h3>🔐 Offline & Secure</h3>
+        <p>No ads, no data collection — full privacy guaranteed.</p>
       </div>
-      <div class="feature-box">
-        <h3>🌐 Multi-Language</h3>
-        <p>Supports Hindi, English & other major languages.</p>
+      <div class="feature">
+        <h3>🌍 Multiple Languages</h3>
+        <p>Supports Hindi, English and more with smooth output.</p>
       </div>
     </div>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Aurelio Team. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+      &copy; 2025 Aurelio Team | All Rights Reserved
+    </footer>
+  </div>
 </body>
 </html>
+
