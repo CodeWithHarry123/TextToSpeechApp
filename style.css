@@ -1,1 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00e0ff;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0f7fa;
+}
+
+.download-btn {
+  background: #00e0ff;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.download-btn:hover {
+  background: #00bcd4;
+}
+
+.features {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.feature h3 {
+  color: #00e0ff;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media(min-width: 768px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
