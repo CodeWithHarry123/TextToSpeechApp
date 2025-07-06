@@ -1,135 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurelio Text To Speech</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #1c1c2b, #2a2f45);
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 700px;
-      width: 100%;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: #00e0ff;
-    }
-
-    p.description {
-      font-size: 1.1rem;
-      color: #ccc;
-      margin-bottom: 2rem;
-    }
-
-    .download-btn {
-      background: #00e0ff;
-      color: #000;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      display: inline-block;
-      margin-bottom: 2rem;
-    }
-
-    .download-btn:hover {
-      background: #00bcd4;
-    }
-
-    .features {
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .feature {
-      background: rgba(255, 255, 255, 0.07);
-      padding: 1rem;
-      border-radius: 15px;
-    }
-
-    .feature h3 {
-      color: #00e0ff;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.85rem;
-      color: #888;
-    }
-
-    @media(min-width: 768px) {
-      .features {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurelioX - The Future of Voice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🎙️ Aurelio Text To Speech App</h1>
-    <p class="description">
-      Convert your text into natural, clear voice — offline and fast.<br />
-      A lightweight and secure app designed for all your TTS needs.
-                          (यह एक हल्का और सुरक्षित ऐप है, जो आपके सभी टेक्स्ट-टू-स्पीच (TTS) आवश्यकताओं के लिए डिज़ाइन किया गया है।
-      यह ऑफ़लाइन और तेज़ गति से आपके पाठ को प्राकृतिक और स्पष्ट आवाज़ में बदलता है।)
-    </p>
+    <header>
+        <nav>
+            <div class="logo">AurelioX</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <button id="theme-switcher"><i class="fas fa-sun"></i></button>
+        </nav>
+    </header>
 
-    <a class="download-btn"
-       href="https://drive.google.com/uc?export=download&id=1_7xx8e_XxEH9zh268CM8ZcNYhLEVIbL3"
-       target="_blank">
-      📥 Download Aurelio_Text_To_Speech_App fully free
-    </a>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The Future of Voice is Here</h1>
+                <p>Experience the most realistic and expressive text-to-speech synthesis with AurelioX.</p>
+                <a href="#download" class="cta-button">Download for Free</a>
+            </div>
+        </section>
 
-    <div class="features">
-      <div class="feature">
-        <h3>🗣️ Natural Voice</h3>
-        <p>Produces realistic speech with adjustable speed and tone.</p>
-      </div>
-      <div class="feature">
-        <h3>📱 Lightweight App</h3>
-        <p>Designed to be fast and responsive on all Android devices.</p>
-      </div>
-      <div class="feature">
-        <h3>🔐 Offline & Secure</h3>
-        <p>No ads, no data collection — full privacy guaranteed.</p>
-      </div>
-      <div class="feature">
-        <h3>🌍 Multiple Languages</h3>
-        <p>Supports Hindi, English and more with smooth output.</p>
-      </div>
-    </div>
+        <section id="features" class="features">
+            <h2>Why AurelioX is Different</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neural Voices</h3>
+                    <p>Our AI-powered voices are virtually indistinguishable from human speech.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Reach</h3>
+                    <p>Communicate effectively with support for over 50 languages and accents.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-sliders-h"></i>
+                    <h3>Fine-Tuned Control</h3>
+                    <p>Customize pitch, speed, and emotion to create the perfect voice for your needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>Simple & Powerful</h2>
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <p>Type or paste your text into the editor.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Choose your preferred voice and settings.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Generate and download your high-quality audio file.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <h2>Hear the Difference</h2>
+            <div class="demo-content">
+                <select id="language-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="hi-IN">Hindi</option>
+                </select>
+                <textarea id="text-input" placeholder="Enter some text to see the magic..."></textarea>
+                <button id="speak-button">Generate Audio</button>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <h2>Get Started with AurelioX</h2>
+            <p>Download the app and revolutionize your workflow.</p>
+            <div class="download-buttons">
+                <a href="downloads/hello.txt" class="download-button" download><i class="fab fa-android"></i> Google Play</a>
+                <a href="#" class="download-button" data-platform="App Store"><i class="fab fa-apple"></i> App Store</a>
+                <a href="#" class="download-button" data-platform="Windows"><i class="fab fa-windows"></i> Windows</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-      &copy; 2025 Aurelio Team | All Rights Reserved
+        <p>&copy; 2025 Aurelio. All rights reserved.</p>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
