@@ -11,6 +11,10 @@ body {
     background-color: var(--dark-color);
     color: var(--light-color);
     overflow-x: hidden;
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://raw.githubusercontent.com/CodeWithHarry123/TextToSpeechApp/main/sitebackground/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -134,9 +138,6 @@ body.light-mode footer {
 }
 
 .hero {
-    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
     color: #fff;
     text-align: center;
     padding: 10rem 1rem 5rem;
@@ -144,6 +145,14 @@ body.light-mode footer {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.hero-icon {
+    display: block;
+    max-width: 150px; /* Adjust as needed */
+    width: 100%;
+    margin: 0 auto 2rem; /* Center and add space below */
+    height: auto;
 }
 
 .hero-content h1 {
@@ -322,6 +331,23 @@ footer {
         padding: 1rem;
     }
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative; /* Ensure nav is relative for absolute positioning of children */
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    #theme-switcher {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
     #menu-button {
         display: block;
         background: none;
@@ -330,16 +356,14 @@ footer {
         font-size: 1.8rem;
         cursor: pointer;
         z-index: 101;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        transform: none;
     }
 
     .nav-links {
         display: none;
         flex-direction: column;
-        position: fixed; /* Changed to fixed for full overlay */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -347,7 +371,7 @@ footer {
         background-color: rgba(26, 26, 26, 0.98);
         justify-content: center;
         align-items: center;
-        z-index: 99; /* Below menu button, above other content */
+        z-index: 99;
     }
 
     .nav-links.active {
@@ -375,30 +399,60 @@ footer {
         width: 90%;
         max-width: 350px;
     }
+
+    /* Further mobile optimizations */
+    .hero {
+        padding: 8rem 1rem 4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features, .how-it-works, .demo, .download {
+        padding: 4rem 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .step span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .demo-content textarea {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #speak-button {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .download-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }
 
-/* Animations */
-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card, .step {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.card.visible, .step.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 #language-select {
     padding: 0.8rem 1.2rem;

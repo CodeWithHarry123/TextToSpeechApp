@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
+    // Close mobile menu when a navigation link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+
     const themeSwitcher = document.getElementById('theme-switcher');
     const body = document.body;
 
